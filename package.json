@@ -1,0 +1,20 @@
+{
+  "name": "WRogozExpressStarter",
+  "version": "1.0.0",
+  "description": "express starter with mongoose, cors, helmet, dotenv, bcrypt, jsonwebtoken",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "wrogoz",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "express": "^4.18.2",
+    "helmet": "^7.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^7.1.0"
+  }
+}

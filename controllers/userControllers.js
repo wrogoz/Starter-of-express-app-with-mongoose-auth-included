@@ -62,40 +62,9 @@ const deleteUser = async (req, res) => {
   }
 };
 
-const addProduct = async (req, res) => {
-  try {
-    const user = await User.findById(req.body.user.id);
-
-    user.shoppingCart.push({
-      name: req.body.name,
-      amount: req.body.amount,
-      weight: req.body.weight,
-    });
-    await user.save();
-    res.send(user);
-  } catch (error) {
-    res.send(`addError:${error.message}`);
-  }
-};
-
-const removeProduct = async (req, res) => {
-  try {
-    const user = await User.findById(req.body.user.id);
-
-    user.shoppingCart = user.shoppingCart.filter((el) => {
-      return el.name !== req.body.name;
-    });
-    await user.save();
-    res.send(user);
-  } catch (error) {
-    res.send(error.message);
-  }
-};
 module.exports = {
   getUserData,
   registerUser,
   loginUser,
-  addProduct,
   deleteUser,
-  removeProduct,
 };

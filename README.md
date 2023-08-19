@@ -1,4 +1,4 @@
-# Sterter of express app with mongoose & auth included.
+# Sterter of express app with mongoose & auth included
 
 # Technologies:
 
